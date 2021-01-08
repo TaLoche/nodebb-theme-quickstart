@@ -1,0 +1,619 @@
+// Theme Dark
+body.lights-out #content {
+  background-color: #232323;
+}
+
+body.lights-out {
+  background: none repeat scroll 0 0 #191919;
+  color: #999999;
+}
+body.lights-out .category>ul>li:not(.unread) .card {
+  border-color: #ccc !important;
+}
+body.lights-out .fa-fw {
+  color: white;
+}
+body.lights-out .navbar-default {
+  background-color: rgba(25,25,25,0.81);
+  border-color: rgba(25,25,25,0.81);
+}
+body.lights-out a {
+  color: #ccc;
+  text-decoration: none;
+  font-weight:bold;
+}
+body.lights-out .category>ul>li:not(.unread) h2 a {
+  color: #adadad !important;
+}
+body.lights-out .navbar-default .navbar-nav>li>a {
+  color: #666;
+}
+/* ICONEN */
+body.lights-out .fa.fa-fw.fa-align-justify{
+  color: white;
+}
+body.lights-out .fa.fa-fw.fa-clock-o{
+  color: white;
+}
+body.lights-out .fa.fa-fw.fa-commenting-o{
+  color: white;
+}
+body.lights-out .fa.fa-fw.fa-user{
+  color: white;
+}
+body.lights-out .fa.fa-fw.fa-circle-o{
+  color: white;
+}
+body.lights-out .fa.fa-fw.fa-gamepad{
+  color: white;
+}
+body.lights-out .fa.fa-fw.fa-file-text-o{
+  color: white;
+}
+body.lights-out .fa.fa-fw.fa-cogs{
+  color: white;
+}
+body.lights-out .fa.fa-fw.fa-search{
+  color: white;
+}
+body.lights-out .fa.fa-fw.fa-lightbulb-o{
+  color: white;
+}
+body.lights-out .fa.fa-fw.fa-bell{
+  color: white;
+}
+body.lights-out .fa.fa-fw.fa-comment-o{
+  color: white;
+}
+body.lights-out .category > ul > li .tag-list .tag {
+  background: #232323;
+}
+/*Mobile*/
+.navbar-default .navbar-toggle {
+  border-color: #fff;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: #fff;
+}
+.composer .mobile-navbar {
+  background: #ffffff;
+  color: #000;
+}
+// END DARK THEME
+
+
+// Correction du bouton nouveau topic trop décalé de base
+.btn-toolbar {
+  margin-left: 0px;
+}
+
+// Images in a quote will not be shown at full size
+blockquote img {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+// In the composer have the emojis sorted out in a grid
+.emoji-link > img, .emoji-link > span {
+  width: 8rem;
+  height: 8rem;
+  margin: 0.4rem 0.6rem;
+} 
+
+// Gif to be at full height
+.emoji-customizations {
+  height: 100%;
+}
+
+// Hide vote column on Home
+.stats-votes  {
+  display: none;
+}
+
+// On the user page have all the menu links on one line
+.col-lg-6 {
+  width: 58%;
+}
+
+
+// Barre latérale recent personnalisée
+// Homepage Display
+
+.navbar-default {
+  border-color: #242424;
+}
+
+body, .page-recent {
+  padding-top: 60px;
+}
+
+// Image de fond seulement sur la page récente / Accueil
+#panel, .page-recent {
+  background-image: url("https://i.imgur.com/hZ5ZSND.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+// Fond blanc sur les autres pages
+#panel {
+  background-image:none;
+}
+
+// Fond transparent sur corps du forum que sur la page récente / Accueil
+#content, .page-recent {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+// Fond classique sur les autres pages
+.header-recent {
+  width: 100%;
+  display: flex;
+  flex-flow:wrap;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container-wotw {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar-wotw {
+  display: flex;
+  flex-flow: column;
+  width: 25%;
+}
+
+.recent {
+  width: 72%;
+}
+
+.sidebar-title {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin: 10px 0 2px 0;
+}
+
+.sidebar-subtitle {
+  font-style: italic;
+}
+
+.title-wotw {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin: 0 0 2px 0;
+}
+
+.carte {
+  display: flex;
+  width: 100%;
+  height: 18rem;
+  background-color: #000;
+  border-radius: 5px;
+  margin-bottom: 1.6rem;
+  cursor: pointer;
+  box-shadow: 4px 4px 6px 3px rgba(0, 0, 0, .15);
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.carte:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(228,200,12, 0.8);
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.carte:hover:before, .carte:focus:before, .carte:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+.carte:hover .carte-subtitle {
+  visibility: visible;
+}
+
+.image-miniature {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-flow: column;
+}
+
+.carte-list {
+  list-style: none;
+  padding: 0px;
+}
+
+.carte-link {
+  margin-left: 1.5rem;
+  display: flex;
+  flex-flow: column-reverse;
+}
+
+.carte-title {
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0px;
+  line-height: 2.1rem;
+  //background-color: #242424;
+  padding: 2px, 0, 2px, 1px
+}
+
+.carte-subtitle {
+  color: #000;
+  font-size: 1.35rem;
+  //font-style: italic;
+  font-weight: 600;
+  margin: 0px;
+  visibility: hidden;
+}
+
+// Détails des cartes individuelles
+.paypal {
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://i.imgur.com/gpGafcw.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.games {
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://i.imgur.com/DAbQ2xE.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.TVShows {
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://i.imgur.com/fSNBKtj.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.movies {
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://i.imgur.com/sknEOX9.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.books {
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)), url(https://i.imgur.com/RCO9zzD.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.music {
+  background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.3)), url(https://i.imgur.com/smZQxfb.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.geek {
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://i.imgur.com/DUOg2Kw.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.lounge {
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://i.imgur.com/QXKbH5g.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.loungeVIP {
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://i.imgur.com/rblM72H.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+// Navbar
+.navbar {
+  min-height: 65px;
+}
+
+.container {
+  margin-top: 5px;
+}
+
+.header #user_dropdown .user-icon, .header #user_dropdown img {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+}
+
+.navbar-default {
+  background-color: #242424;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #cacaca;
+}
+
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+  color: #e4c80c;
+}
+
+.navbar-default .btn-link {
+  color: #cacaca;
+}
+
+.navbar-default .btn-link:focus, .navbar-default .btn-link:hover {
+  color: #e4c80c;
+}
+
+// Boutons & Pagination
+// Bouton nouveau sujet
+.btn-primary {
+  background-color: #242424;
+  color: #e4c80c;
+  border-color: #242424;
+  border-radius: 5px;
+  font-weight: 600;
+  text-transform: lowercase;
+  box-shadow: 4px 4px 6px 3px rgba(0, 0, 0, .15);
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+  background-color: #e4c80c;
+  color: #242424;
+  border-color: #e4c80c;
+}
+
+.btn-default {
+  border-radius: 5px;
+  font-weight: 600;
+  box-shadow: 4px 4px 6px 3px rgba(0, 0, 0, .05);
+}
+
+.category > ul > li:not(.unread) h2 a {
+  color: #312c2c;
+  text-transform: lowercase;
+}
+
+.category > ul > li .tag-list .tag {
+  text-transform: uppercase;
+  font-size: 10px;
+  background: #e4c80c;
+  color: black;
+  border-radius: 5px;
+  opacity: 0.85;
+}
+
+
+.pagination > .active > a {
+  background-color: #242424;
+  color: #e4c80c;
+  border-color: #242424;
+  font-weight: 600;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+
+.pagination > .active > a:hover {
+  background-color: #e4c80c;
+  color: #242424;
+  border-color: #e4c80c;
+}
+
+.pagination > li > a {
+  color: #242424;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+
+.pagination > li > a:hover {
+  background-color: #e4c80c;
+  color: #242424;
+  border-color: #e4c80c;
+}
+
+.btn-info {
+  color: #242424;
+  background-color: #e4c80c;
+  border-color: #e4c80c;
+  box-shadow: 4px 4px 6px 3px rgba(0, 0, 0, .05);
+}
+
+.btn-info:hover {
+  background-color: #eede72;
+  border-color: #eede72;
+}
+
+.btn-info:active, .btn-info:focus, .open > .dropdown-toggle.btn-info {
+  background-color: #eede72;
+  border-color: #eede72;
+}
+
+
+// Stats
+.forum-stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+// Users online
+.active-users {
+  margin: 0 0 3rem 0;
+}
+
+.active-users .avatar.avatar-sm {
+  height: 35px;
+  width: 35px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 6px 3px rgba(0,0,0,0.15);
+}
+
+// Footer
+footer {
+  text-align: center;
+  margin-top: 2em;
+}
+
+
+// SLIDER
+.slider {
+  background: #242424;
+  background-image: url(https://i.imgur.com/51sf1sr.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  //padding: 10px;
+  margin: 0px -15px 25px -15px;
+  display: flex;
+  flex-flow: row-reverse;
+  justify-content:space-between;
+}
+
+.slider-subtitle {
+  display: flex;
+  flex-flow: column-reverse;
+  font-size: 1.5rem;
+  color: white;
+  margin-right: 4.5rem;
+  margin-bottom: 2rem;
+}
+
+.contener_slideshow {
+  width:610px;
+  height:211px;
+  overflow: hidden;
+  position: relative;
+  background-image: url(http:YOUR-URL-IMAGE.png);
+}
+
+.slid_1, .slid_2, .slid_3
+{
+  position: absolute;
+  width:610px;
+  height:211px;
+}
+.slid_1{left: 0;}
+.slid_2{left: 610px;}
+.slid_3{left: 1220px;}
+.contener_slide
+{
+  width: 1220px;
+  height: 211px;
+  left:0px;
+  position: absolute;
+  -webkit-animation-duration: 10s;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-name: anim_slide;
+  -moz-animation-duration: 10s;
+  -moz-animation-iteration-count:infinite;
+  -moz-animation-name: anim_slide;
+  -ms-animation-duration: 10s;
+  -ms-animation-iteration-count:infinite;
+  -ms-animation-name: anim_slide;
+  animation-duration: 10s;
+  animation-iteration-count:infinite;
+  animation-name: anim_slide;
+}
+@-webkit-keyframes anim_slide 
+{
+  0% {left:0px;}
+  22% {left:0px;}
+  33% {left:-610px;}
+  45% {left:-610px;}
+  66% {left:-1220px;}
+  90% {left:-1220px;}
+}
+@-moz-keyframes anim_slide 
+{
+  0% {left:0px;}
+  22% {left:0px;}
+  33% {left:-610px;}
+  45% {left:-610px;}
+  66% {left:-1220px;}
+  90% {left:-1220px;}
+}
+@-ms-keyframes anim_slide 
+{
+  0% {left:0px;}
+  22% {left:0px;}
+  33% {left:-610px;}
+  45% {left:-610px;}
+  66% {left:-1220px;}
+  90% {left:-1220px;}
+}
+@keyframes anim_slide 
+{
+  0% {left:0px;}
+  22% {left:0px;}
+  33% {left:-610px;}
+  45% {left:-610px;}
+  66% {left:-1220px;}
+  90% {left:-1220px;}
+}
+
+@media (max-width: 640px) {
+  /* CSS mobile ici */
+	#panel {
+		background-image: none;
+	}
+	
+	#panel, .page-recent {
+		background-image: none;
+	}
+
+	#content {
+		background-color: white;
+	}
+	  
+	.sidebar-wotw {
+		display: none;
+	}
+	  
+	.recent {
+		width: 100%;
+	}
+	  
+	.header .forum-logo {
+		width: 65%;
+		margin-top: 5px;
+	}
+	  
+  body, .page-recent {
+    padding-top: 10px;
+  }
+    
+  #mobile-menu {
+    color: #fff;
+    background: #232323;
+  }
+    
+  #mobile-chats {
+    color: #fff;
+    background: #232323;
+  }
+}

@@ -1,0 +1,14 @@
+.container-wotw {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar-wotw {
+  display: flex;
+  flex-flow: column;
+  width: 25%;
+}
+
+.recent {
+  width: 72%;
+}

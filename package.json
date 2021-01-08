@@ -1,10 +1,22 @@
 {
-  "name": "nodebb-theme-quickstart",
-  "version": "0.0.0",
-  "description": "Enter a description here",
+  "name": "nodebb-theme-wotw",
+  "version": "0.0.3",
+  "description": "Du con fait par des cons",
   "main": "theme.less",
-  "keywords": [
+  "keywords": ["raclette", "terre-neuve"],
+  "license": "MIT",
 
-  ],
-  "license": "MIT"
+  "author": {
+    "name": "Christian B",
+    "email": "writersofthewind@gmail.com",
+    "url": "https://writersofthewind.com/"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TaLoche/nodebb-theme-wotw"
+  }
 }
+
+
+

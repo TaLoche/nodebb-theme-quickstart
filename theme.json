@@ -1,6 +1,7 @@
 {
-    "id": "nodebb-theme-quickstart",
-    "name": "My Theme Name",
-    "description": "Enter a description here",
-    "url": "https://github.com/nodebb/nodebb-theme-quickstart"
+    "id": "nodebb-theme-wotw",
+    "name": "The WotW Theme",
+    "description": "A theme made for connards",
+    "url": "https://github.com/nodebb/nodebb-theme-quickstart",
+    "screenshot": "screenshot.png"
 }
