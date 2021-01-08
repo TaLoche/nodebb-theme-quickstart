@@ -1,7 +1,6 @@
 {
     "id": "nodebb-theme-wotw",
-    "name": "The WotW Theme",
-    "description": "A theme made for connards",
-    "url": "https://github.com/nodebb/nodebb-theme-quickstart",
-    "screenshot": "screenshot.png"
+    "name": "WotW Theme",
+    "description": "La classe à l'américaine",
+    "url": "https://github.com/TaLoche/nodebb-theme-wotw"
 }
